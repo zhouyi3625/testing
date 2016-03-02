@@ -1,0 +1,408 @@
+body {
+    font-size: 16px;
+    font-family: Microsoft YaHei,Tahoma,simsun;
+    text-decoration: none;
+    text-align: center;
+}
+
+h2 {
+    font-size: 50px;
+    text-shadow: 1px 2px #afc3aa, 2px 4px #ffb2d9;
+    padding-top: 30px;
+    padding-bottom: 40px;
+    color: #4fc1e9;
+}
+
+.centerAlgin {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#page1 {
+    padding-top: 100px;
+}
+
+.logo {
+    width: 200px;
+    height: 200px;
+    border: 5px solid #aee2d9;
+    border-radius: 50%;
+    text-indent: -9999px;
+    background: transparent url(http://i11.tietuku.com/dd5ae76929bbc299.jpg) center top;
+    margin-bottom: 40px;
+
+}
+
+.statement {
+    padding-bottom: 20px;
+    font-size: 26px;
+    height: 40px;
+    line-height: 40px;
+    font-size: bold;
+    color: #4fc1e9;
+    text-shadow: 1px 1px #afc3aa, 1px 1px #ffb2d9;
+}
+
+.preferedCity {
+    font-size: 20px;
+    padding-bottom: 20px;
+     color: #4fc1e9;
+    text-shadow: 1px 1px #afc3aa, 1px 1px #ffb2d9;
+}
+
+#page1::after {
+    content: '';
+    clear: both;
+    height: 90px;
+    display: block;
+}
+
+.baseInfo, .educationInfo {
+    width: 50%;
+    box-sizing: border-box;
+    float: left;
+}
+
+.baseInfo {
+    border-right: 2px dashed pink;
+    padding-left: 300px;
+    padding-right: 40px;
+}
+
+.educationInfo {
+    padding-left: 40px;
+    text-align: left;
+}
+
+.educationInfo > ul {
+    margin-bottom: 30px;
+}
+
+.educationInfo_selfEvaluation {
+    line-height: 1.5em;
+    width: 450px;
+}
+
+.educationInfo_duration, .educationInfo_school, .educationInfo_major, .educationInfo_degree {
+    display: inline-block;
+}
+
+.educationInfo_duration {
+    width: 150px;
+}
+
+
+.educationInfo_school {
+    width: 90px;
+}
+
+
+.educationInfo_major {
+    width: 160px;
+}
+
+
+.educationInfo_degree {
+    width: 60px;
+}
+.baseInfo dt, .baseInfo dd {
+    float: left;
+    box-sizing: border-box;
+    color: 15px;
+    margin-bottom: 5px;
+    width: 50%;
+}
+.baseInfo dt {
+    border-right: 1px solid pink;
+    text-align: right;
+    padding-right: 10px;
+}
+.baseInfo dd {
+    text-align: left;
+    padding-left: 10px;
+}
+
+#page2, #page4 {
+    background: #F9F9F9;
+}
+
+
+.skillList {
+    width: 800px;
+    padding-bottom: 100px;
+    overflow: hidden;
+}
+
+.skillList > li {
+    height: 40px;
+    margin-top: 15px;
+    line-height: 40px;
+    text-align: left;
+    padding-left: 8px;
+    border-left: 4px solid;
+    position: relative;
+}
+
+.skill_java {
+    width: 700px;
+    background: #d6efff;
+    color: #3498db;
+}
+
+.skill_distribute {
+    width: 500px;
+    background: #ffcfff ;
+    color: #ff0fff ;
+}
+
+.skill_html {
+    width: 650px;
+    background: #eaf6d0;
+    color: #80bd01;
+}
+
+.skill_database {
+    width: 600px;
+    background: #afa6ff;
+    color: #af00ff;
+}
+
+.skill_server {
+    width: 400px;
+    background: #fff6aa;
+    color: #fdbc40;
+}
+
+.skill_detail {
+    display: none;
+    position: absolute;
+    top: 15px;
+    left: 120px;
+    z-index: 1;
+    background: #FAFAFA;
+    max-width: 400px;
+    min-width: 200px;
+    border-radius: 5px;
+}
+
+.skill_detail li {
+    list-style:inside disc;
+    font-size: 14px;
+    padding-left: 10px;
+    line-height: 28px;
+    color: #0f0f0f;
+}
+
+.education {
+    position: relative;
+}
+
+.education::after {
+    content: '';
+    height: 100%;
+    width: 0;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    border: 1px solid #aab2bd;
+    z-index: -1;
+}
+
+.education_year {
+    background: #aab2bd;
+    border-radius: 7px;
+    height: 30px;
+    width: 120px;
+    line-height: 30px;
+    color: white;
+    font-size: 12px;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.education_info {
+    padding-top: 40px;
+    height: 150px;
+    position: relative;
+}
+
+.education_info::after {
+    left: 50%;
+    margin-left: -8px;
+    border-radius: 50%;
+    width: 16px;
+    height: 16px;
+    background: #4fc1e9;
+    border: 2px solid white;
+    position: absolute;
+    content: '';
+}
+
+.education_left, .education_right {
+    color: #4fc1e9;   
+    position: relative;
+    font-size: 13px;
+}
+
+.education_right {
+    float: left;
+    left: 50%;
+}
+
+.education_left {
+    float: right;
+    right: 50%;
+}
+
+.education_duration {
+    width: 150px;
+}
+
+.education_desc {
+    margin-left: 20px;
+    margin-right: 20px;
+    height: 100px;
+    width: 400px;
+    background: #eaf6d0;
+    border-radius: 10px;
+    padding: 10px;
+    margin-top: -16px;
+}
+
+.education_schoolLogo {
+    width: 144px;
+    height: 72px;
+    float: left;
+}
+
+.education_detail {
+    margin-left: 155px;
+    text-align: left;
+}
+
+.education_detail h3 {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 7px;
+}
+
+.education_detail dt, .education_detail dd {
+    color: #224466;
+    float: left;
+}
+
+.education_detail dt {
+    width: 20%;
+}
+
+.education_detail dd {
+    width: 80%;
+}
+
+.programExperience {
+    width: 900px;
+    text-align: left;
+}
+
+
+.programExperience > li {
+    border-bottom: 3px dashed #555;
+    padding: 20px 0 30px;
+}
+
+.programExperience_programName {
+    font-size: 16px;
+    padding-bottom: 10px;
+    font-weight: bold;
+}
+
+.programExperience .lastProgram {
+    border-bottom: none;
+    padding-bottom: 50px;
+}
+
+.programExperience_memcached, .programExperience_java, .programExperience_zookeeper, .programExperience_mongodb, 
+.programExperience_activemq, .programExperience_elasticsearch, .programExperience_mysql {
+    display: inline-block;
+    border-radius: 3px;
+    margin-right: 5px;
+    padding: 0 10px;
+    color: #888;
+    font-size: 13px;
+}
+.programExperience_mongodb {
+    background: #efccff;
+}
+
+.programExperience_elasticsearch {
+    background: #ffcfff;
+}
+
+.programExperience_java {
+    background: #d6efff;
+}
+
+.programExperience_memcached {
+    background: #80bd01;
+}
+
+.programExperience_mysql {
+    background: #afa6ff;
+}
+
+.programExperience_zookeeper {
+    background: #eaf6d0;
+}
+
+.programExperience_activemq {
+    background: #fff6aa;
+}
+
+.programExperience_introduction, .programExperience_responsibility {
+    font-size: 14px;
+}
+.programExperience_introduction {
+    padding-top: 10px;
+    padding-bottom: 20px;
+    line-height: 1.5em;    
+}
+
+.programExperience_duration {
+    float: right;
+    font-size: 13px;
+    color: #888;
+}
+.pageScroller {
+    position: fixed;
+    top: 30%; 
+    right: 80px; 
+
+}
+
+.pageScroller > li {
+    margin-bottom: 10px;
+}
+
+.pageScroller .pageAnchor {
+    text-decoration: none;
+    color: red;
+    display: block;
+    height: 8px;
+    width: 8px;
+    border-radius: 50%;
+    border: 1px solid #4fc1e9;
+}
+
+.currentAnchor {
+    background: #4fc1e9;
+}
+
+.pageAnchor span {
+    margin-left: 15px;
+    display: none;
+    width: 60px;
+    text-align: left;
+    font-size: 12px;
+    line-height: 8px;
+    color: #4fc1e9;
+}
